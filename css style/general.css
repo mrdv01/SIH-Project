@@ -1,0 +1,14 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    font-family:Roboto,Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body{
+    padding-top: 70px;
+    
+    transition: all ease 0.1s;
+
+}

@@ -1,0 +1,113 @@
+.carousel-container{
+    height: 600px;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+.pannel{
+    position: relative;
+    display: none;
+}
+
+.pannel-img{
+    object-fit: cover;
+    object-position: right;
+    height: 400px;
+    width: 90vw;
+}
+.pannel-msg{
+    font-family: Kalina;
+    position: absolute;
+    color:black;
+    width: 200px;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 18px 18px;
+    top: 150px;
+    left: 24px;
+    cursor: pointer;
+}
+
+.prev{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    
+}
+.next{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media(max-width:910px){
+    .prev{
+        width: 30px;
+        height: 30px;
+        transition: width 0.15s;
+        transition: height ease-in 0.15s;
+    }
+    .next{
+        width: 30px;
+        height: 30px;
+        transition: width 0.15s;
+        transition: height ease-in 0.15s;
+    }
+    
+  }
+
+  @media(max-width:1000px){
+    .pannel-msg{
+        font-size: 18px;
+        width: 150px;
+        transition: all ease-in 0.15s;
+        
+    }
+    }
+
+    @media(max-width:600px)
+    {
+        .pannel-img{
+            width: 80vw;
+            object-fit: contain;
+            transition: all ease-in 0.15s;
+        }
+        .carousel-container{
+            height: 400px;
+            transition: all ease-in 0.15s;
+        }
+    }
+    @media(max-width:390px)
+    {
+        
+        .carousel-container{
+            height: 300px;
+            transition: all ease-in 0.15s;
+        }
+    }
+
+ 

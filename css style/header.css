@@ -1,0 +1,134 @@
+.header {
+    height: 70px;
+    background-color: #242222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.categories-link {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    font-size: 16px;
+    width: 400px;
+    height: 22px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: none;
+    padding: 4px 10px;
+    flex: 1;
+    width: 0;
+    outline: none;
+}
+.search-btn{
+    height: 30px;
+    width: 30px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: none;
+    margin-right: -2px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .search-icon{
+    height: 25px;
+    width: 25px;
+ }
+.search-box{
+    flex: 1;
+    max-width: 500px;
+    min-width: 100px;
+    margin-left: 20px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.left-section{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.right-section{
+    width: 220px;
+    /* border: 2px solid lightblue; */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification-icon,.cart-icon,.fav-icon,.user-icon{
+    height: 20px;
+    transition: transform 0.15s;
+}
+.fav-icon:hover,.notification-icon:hover,.cart-icon:hover,.user-icon:hover{
+    transform: scale(1.2);
+}
+.notification-container,.cart-container,.fav-container,.user-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.notification-container .tooltip,.cart-container .tooltip,.fav-container .tooltip,.user-container .tooltip{
+
+    position: absolute;
+    bottom: -25px;
+    font-family: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+
+}
+.notification-container:hover .tooltip,.cart-container:hover .tooltip,.fav-container:hover .tooltip,.user-container:hover .tooltip{
+    opacity: 1;
+}
+
+@media(max-width:635px){
+    .right-section{
+        width: 200px;
+        flex-shrink: 0.5;
+        
+    }
+    .header{
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+         white-space: nowrap;
+    }
+}
+
+@media(max-width:490px){
+    .right-section{
+       
+        flex-shrink: 0;
+        
+    }
+}
