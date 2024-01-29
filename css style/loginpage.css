@@ -36,6 +36,9 @@ body {
     background-color: transparent;
 
     border: 1px solid #fff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
 }
 
 
